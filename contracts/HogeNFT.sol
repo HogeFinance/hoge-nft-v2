@@ -32,6 +32,9 @@ contract HogeNFT is Context, AccessControl, ERC721Burnable, ERC721Pausable {
 
     Counters.Counter private _tokenIdTracker;
 
+    function () public payable {
+    }
+
     /**
      * @dev Grants `DEFAULT_ADMIN_ROLE`, `MINTER_ROLE` and `PAUSER_ROLE` to the
      * account that deploys the contract.
