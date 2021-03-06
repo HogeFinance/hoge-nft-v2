@@ -32,7 +32,9 @@ contract HogeNFT is Context, AccessControl, ERC721Burnable, ERC721Pausable {
 
     Counters.Counter private _tokenIdTracker;
 
-    function () public payable {
+    event Received(address, uint);
+    receive() external payable {
+        emit Received(msg.sender, msg.value);
     }
 
     /**
