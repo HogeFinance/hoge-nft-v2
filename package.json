@@ -18,7 +18,10 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^3.4.0",
+    "@truffle/hdwallet-provider": "^1.2.2",
     "chai": "^4.3.0",
-    "truffle": "^5.1.65"
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.65",
+    "truffle-plugin-verify": "^0.5.6"
   }
 }

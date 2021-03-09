@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e2476d0-8f4f-46c6-b52c-c4e8bcdabf8d" name="Default Changelist" comment="" />
+    <list default="true" id="3e2476d0-8f4f-46c6-b52c-c4e8bcdabf8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/AccessControl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Address.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Context.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Counters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC1155.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC1155Burnable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC1155Pausable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC165.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721Burnable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721Pausable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/EnumerableMap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/EnumerableSet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/HogeBatchMint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/HogeNFT.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC1155.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC1155MetadataURI.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC1155Receiver.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC165.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721Enumerable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721Metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721Receiver.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Pausable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Strings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/HogeBatchMint.sol" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/2_deploy_minter.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/2_deploy_minter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestGameItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestHogeNFT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/truffle-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/truffle-config.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,29 +45,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/HogeNFT.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="90">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.git-ignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/utils/Counters.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol">
+        <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/utils/Context.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="210">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.sql">
+        <entry file="file://$PROJECT_DIR$/truffle-config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9900">
-              <caret line="660" column="54" selection-start-line="660" selection-start-column="54" selection-end-line="660" selection-end-column="54" />
+            <state relative-caret-position="720">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/migrations/2_deploy_minter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="84" selection-start-line="3" selection-start-column="84" selection-end-line="3" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/Migrations.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -43,17 +119,22 @@
     <findStrings>
       <find>mynft</find>
       <find>abi</find>
-      <find>safemint</find>
-      <find>uri</find>
       <find>setTokenURI</find>
-      <find>mint</find>
       <find>_mint(</find>
       <find>tokenFromRefl</find>
       <find>currentRate</find>
       <find>_getRate()</find>
       <find>reflect(</find>
       <find>reflectionFrom</find>
+      <find>paya</find>
+      <find>safemint</find>
+      <find>mint</find>
+      <find>_safeMint</find>
+      <find>uri</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,28 +154,38 @@
         <option value="$PROJECT_DIR$/test/TestGameItem.sol" />
         <option value="$PROJECT_DIR$/contracts/ERC721PresetMinterPauserAutoId.sol" />
         <option value="$PROJECT_DIR$/contracts/MyNFT.sol" />
-        <option value="$PROJECT_DIR$/test/TestGameItem.js" />
         <option value="$PROJECT_DIR$/migrations/3_deploy_minter.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/truffle-config.js" />
         <option value="$PROJECT_DIR$/contracts/HogeOriginal.sol" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.sql" />
         <option value="$PROJECT_DIR$/contracts/hoge.sol" />
-        <option value="$PROJECT_DIR$/migrations/2_deploy_minter.js" />
         <option value="$PROJECT_DIR$/contracts/HogeBatchMint.sol" />
         <option value="$PROJECT_DIR$/contracts/HogeNFT.sol" />
+        <option value="$PROJECT_DIR$/contracts/original.sol" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/migrations/2_deploy_minter.js" />
+        <option value="$PROJECT_DIR$/test/TestGameItem.js" />
+        <option value="$PROJECT_DIR$/test/TestHogeNFT.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.sql" />
+        <option value="$PROJECT_DIR$/truffle-config.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1900" />
-    <option name="height" value="1053" />
+    <option name="x" value="509" />
+    <option name="y" value="61" />
+    <option name="width" value="1139" />
+    <option name="height" value="921" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,7 +201,6 @@
             <path>
               <item name="hoge-nft" type="b2602c69:ProjectViewProjectNode" />
               <item name="hoge-nft" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="contracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -118,37 +208,27 @@
               <item name="hoge-nft" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hoge-nft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="hoge-nft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GenericSQL" />
-    <property name="last_opened_file_path" value="$USER_HOME$/hogemint" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/scratch" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/contracts" />
       <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scratch" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -200,16 +280,25 @@
       <workItem from="1614829907757" duration="1685000" />
       <workItem from="1614882120377" duration="12623000" />
       <workItem from="1614966351815" duration="220000" />
+      <workItem from="1614997402616" duration="2007000" />
+      <workItem from="1615000213344" duration="1654000" />
+      <workItem from="1615050029463" duration="2963000" />
+      <workItem from="1615096773524" duration="477000" />
+      <workItem from="1615152813260" duration="576000" />
+      <workItem from="1615157568398" duration="33000" />
+      <workItem from="1615164821105" duration="8975000" />
+      <workItem from="1615241274254" duration="1289000" />
+      <workItem from="1615258641846" duration="2358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74182000" />
+    <option name="totallyTimeSpent" value="94514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2165059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1404073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -264,20 +353,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/presets/ERC721PresetMinterPauserAutoId.sol">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/utils/Counters.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TestGameItem.sol" />
     <entry file="file://$PROJECT_DIR$/src/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -290,33 +365,16 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/HogeOriginal.sol" />
-    <entry file="file://$PROJECT_DIR$/truffle-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/utils/Context.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contracts/Adoption.sol" />
     <entry file="file://$PROJECT_DIR$/test/TestAdoption.sol" />
     <entry file="file://$PROJECT_DIR$/contracts/GLDToken.sol" />
     <entry file="file://$PROJECT_DIR$/migrations/2_deploy_contract.js" />
-    <entry file="file://$PROJECT_DIR$/build/contracts/HogeNFT.json">
+    <entry file="file://$PROJECT_DIR$/../hogemint/data/eth/HogeNFT.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/1_initial_migration.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/ERC721Burnable.sol">
       <provider selected="true" editor-type-id="text-editor">
@@ -328,28 +386,11 @@
     <entry file="file://$PROJECT_DIR$/node_modules/web3/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/Migrations.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contracts/hoge.sol" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestGameItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -362,13 +403,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC1155/ERC1155Burnable.sol">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/introspection/IERC165.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC1155/IERC1155.sol">
       <provider selected="true" editor-type-id="text-editor">
@@ -387,38 +421,25 @@
     <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC1155/ERC1155Pausable.sol">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/2_deploy_minter.js">
+    <entry file="file://$PROJECT_DIR$/contracts/HogeBatchMint.sol" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/introspection/IERC165.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="195">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/HogeBatchMint.sol">
+    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/introspection/ERC165.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/ERC721Pausable.sol">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/HogeNFT.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="45">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -428,6 +449,100 @@
           <caret line="660" column="54" selection-start-line="660" selection-start-column="54" selection-end-line="660" selection-end-column="54" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/original.sol" />
+    <entry file="file://$PROJECT_DIR$/migrations/1_initial_migration.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/token/ERC721/ERC721Pausable.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/utils/Counters.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@openzeppelin/contracts/utils/Context.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/truffle-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestHogeNFT.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/2_deploy_minter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="84" selection-start-line="3" selection-start-column="84" selection-end-line="3" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/Migrations.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/HogeNFT.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.git-ignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

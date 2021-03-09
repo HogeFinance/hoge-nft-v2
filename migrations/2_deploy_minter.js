@@ -1,7 +1,5 @@
-var Mint = artifacts.require("HogeNFT");
-var BatchMint = artifacts.require("HogeBatchMint");
+var Mint = artifacts.require("HogeNFT")
 
 module.exports = function(deployer) {
-    deployer.deploy(Mint, "Hoge Foundation Mint", "HOGEMNT", "https://www.hogemint.com/uri/");
-    deployer.deploy(BatchMint, "https://www.hogemint.com/uri/");
+    deployer.deploy(Mint, "Hoge Foundation Mint", "HOGENFT", "https://www.hogemint.com/uri/");
 };
