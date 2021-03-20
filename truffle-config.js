@@ -1,7 +1,6 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 require('dotenv').config();
 
-
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // for more about customizing your Truffle configuration!
@@ -21,7 +20,7 @@ module.exports = {
             `https://mainnet.infura.io/v3/${process.env.INFURA_ID}`
         )
       },
-      gas: 5000000,          // Default gas to send per transaction
+      gas: 5000000,           // Default gas to send per transaction
       gasPrice: 90000000000,  // 90 gwei
       network_id: 1,
       skipDryRun: true

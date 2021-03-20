@@ -14,7 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "@openzeppelin/test-helpers": "^0.5.10",
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "pry": "^0.8.12"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^3.4.0",

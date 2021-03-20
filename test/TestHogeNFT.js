@@ -1,6 +1,7 @@
 // test/Box.test.js
 // Load dependencies
 const { expect } = require('chai');
+require('dotenv').config();
 
 // Import utilities from Test Helpers
 const { BN, expectEvent, expectRevert, constants } = require('@openzeppelin/test-helpers');
@@ -46,15 +47,27 @@ contract('HogeNFT', function ([ creator, other, holder ]) {
             'ERC721PresetMinterPauserAutoId: must have minter role to mint.'
         );
     });
-    it("get the size of the contract", function() {
-        return HogeNFT.deployed().then(function (instance) {
-            var bytecode = instance.constructor._json.bytecode;
-            var deployed = instance.constructor._json.deployedBytecode;
-            var sizeOfB = bytecode.length / 2;
-            var sizeOfD = deployed.length / 2;
-            console.log("size of bytecode in bytes = ", sizeOfB);
-            console.log("size of deployed in bytes = ", sizeOfD);
-            console.log("initialisation and constructor code in bytes = ", sizeOfB - sizeOfD);
-        });
-    })
+
+    // This is a convenience method.
+    // Use with test network to estimate cost of gas and transaction size.
+    //
+    // it("get the size of the contract", function() {
+    //     return HogeNFT.deployed().then(function (instance) {
+    //         var bytecode = instance.constructor._json.bytecode;
+    //         var deployed = instance.constructor._json.deployedBytecode;
+    //         var sizeOfB = bytecode.length / 2;
+    //         var sizeOfD = deployed.length / 2;
+    //         console.log("size of bytecode in bytes = ", sizeOfB);
+    //         console.log("size of deployed in bytes = ", sizeOfD);
+    //         console.log("initialisation and constructor code in bytes = ", sizeOfB - sizeOfD);
+    //         console.log("Estimating Gas");
+    //         instance.methods
+    //             .mint(`${process.env.TESTNET_WALLET_ADDRESS}`, 1)
+    //             .estimateGas()
+    //             .then(function (estimate) {
+    //                 console.log("Estimated gas to execute mint: ", estimate);
+    //             });
+    //
+    //     });
+    // })
 });
