@@ -7,13 +7,14 @@ import "@openzeppelin/contracts/utils/Context.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract HogeNFT is Context, AccessControl, ERC721 {
+contract HogeNFTv2 is Context, AccessControl, ERC721 {
     using Counters for Counters.Counter;
 
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
     Counters.Counter private _tokenIdTracker;
+    address private _owner;
 
     event Received(address, uint);
     event Mint(address from, address to, string uri);
@@ -28,7 +29,13 @@ contract HogeNFT is Context, AccessControl, ERC721 {
         _setupRole(MINTER_ROLE, _msgSender());
         _setupRole(PAUSER_ROLE, _msgSender());
 
+        _owner = msg.sender;
+
         _setBaseURI(baseURI);
+    }
+
+    function owner() public view returns (address) {
+        return _owner;
     }
 
     function mint(address to, string memory uri) public returns (uint) {
