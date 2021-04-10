@@ -1,5 +1,9 @@
-const HDWalletProvider = require('@truffle/hdwallet-provider');
 require('dotenv').config();
+
+var provider, address;
+//const HDWalletProvider = require("truffle-hdwallet-provider-privkey");
+const privKey = process.env.PRIVATE_KEY;
+const PrivateKeyProvider = require("truffle-privatekey-provider");
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -14,35 +18,20 @@ module.exports = {
     },
 
     mainnet: {
-      provider: function() {
-        return new HDWalletProvider(
-            `${process.env.MNEMONIC}`,
-            `https://mainnet.infura.io/v3/${process.env.INFURA_ID}`
-        )
-      },
-      gas: 5000000,           // Default gas to send per transaction
+      provider: () => new PrivateKeyProvider(privKey, `https://mainnet.infura.io/v3/${process.env.INFURA_ID}`),
+      gas: 5000000,           // Deployment of recent mints has been about 3.9 to 4.1mil gas
       gasPrice: 90000000000,  // 90 gwei
       network_id: 1,
       skipDryRun: true
     },
 
     ropsten: {
-      provider: function() {
-        return new HDWalletProvider(
-            `${process.env.MNEMONIC}`,
-            `https://ropsten.infura.io/v3/${process.env.INFURA_ID}`
-        )
-      },
+      provider: () => new PrivateKeyProvider(privKey, `https://ropsten.infura.io/v3/${process.env.INFURA_ID}`),
       network_id: 3
     },
 
     rinkeby: {
-      provider: function() {
-        return new HDWalletProvider(
-            `${process.env.MNEMONIC}`,
-            `https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`
-        )
-      },
+      provider: () => new PrivateKeyProvider(privKey, `https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`),
       network_id: 4
     },
 

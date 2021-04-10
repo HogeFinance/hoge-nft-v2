@@ -23,6 +23,7 @@
     "chai": "^4.3.0",
     "dotenv": "^8.2.0",
     "truffle": "^5.1.65",
-    "truffle-plugin-verify": "^0.5.6"
+    "truffle-plugin-verify": "^0.5.6",
+    "truffle-privatekey-provider": "^1.5.0"
   }
 }

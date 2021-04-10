@@ -18,6 +18,7 @@ contract HogeNFTv2 is Context, AccessControl, ERC721 {
 
     event Received(address, uint);
     event Mint(address from, address to, string uri);
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
     receive() external payable {
         emit Received(msg.sender, msg.value);
@@ -30,12 +31,9 @@ contract HogeNFTv2 is Context, AccessControl, ERC721 {
         _setupRole(PAUSER_ROLE, _msgSender());
 
         _owner = msg.sender;
+        emit OwnershipTransferred(address(0), _owner);
 
         _setBaseURI(baseURI);
-    }
-
-    function owner() public view returns (address) {
-        return _owner;
     }
 
     function mint(address to, string memory uri) public returns (uint) {
@@ -47,33 +45,6 @@ contract HogeNFTv2 is Context, AccessControl, ERC721 {
         _tokenIdTracker.increment();
     }
 
-    function mintBatch(address[] memory recipients, bytes32[] memory uri_bytes) public virtual {
-        require(hasRole(MINTER_ROLE, _msgSender()), "Must have minter role to mint");
-
-        for (uint256 i = 0; i < recipients.length; i++) {
-            _safeMint(recipients[i], _tokenIdTracker.current());
-            _setTokenURI(_tokenIdTracker.current(), bytes32ToString(uri_bytes[i]));
-            _tokenIdTracker.increment();
-        }
-    }
-
-    function bytes32ToString(bytes32 x) public returns (string memory) {
-        bytes memory bytesString = new bytes(32);
-        uint charCount = 0;
-        for (uint j = 0; j < 32; j++) {
-            byte char = byte(bytes32(uint(x) * 2 ** (8 * j)));
-            if (char != 0) {
-                bytesString[charCount] = char;
-                charCount++;
-            }
-        }
-        bytes memory bytesStringTrimmed = new bytes(charCount);
-        for (uint j = 0; j < charCount; j++) {
-            bytesStringTrimmed[j] = bytesString[j];
-        }
-        return string(bytesStringTrimmed);
-    }
-
     function burn(uint256 tokenId) public virtual {
         require(_isApprovedOrOwner(_msgSender(), tokenId), "Burn: Caller is not owner nor approved");
         _burn(tokenId);
@@ -81,5 +52,40 @@ contract HogeNFTv2 is Context, AccessControl, ERC721 {
 
     function _beforeTokenTransfer(address from, address to, uint256 tokenId) internal virtual override(ERC721) {
         super._beforeTokenTransfer(from, to, tokenId);
+    }
+
+    // Begin Ownable interface from openzeppelin
+    // Primarily used for OpenSea storefront management, AccessControl is used for choosing who can mint.
+    // Owner, MINTER_ROLE, PAUSER_ROLE can all be separate addresses!
+    function owner() public view returns (address) {
+        return _owner;
+    }
+
+    modifier onlyOwner() {
+        require(isOwner());
+        _;
+    }
+
+    function isOwner() public view returns (bool) {
+        return msg.sender == _owner;
+    }
+
+    function renounceOwnership() public onlyOwner {
+        emit OwnershipTransferred(_owner, address(0));
+        _owner = address(0);
+    }
+
+    function transferOwnership(address newOwner) public onlyOwner {
+        _transferOwnership(newOwner);
+    }
+
+    function _transferOwnership(address newOwner) internal {
+        require(newOwner != address(0));
+        emit OwnershipTransferred(_owner, newOwner);
+        _owner = newOwner;
+    }
+
+    function contractURI() public view returns (string memory) {
+        return "https://www.hogemint.com/uri/contract-HogeNFTv2";
     }
 }
